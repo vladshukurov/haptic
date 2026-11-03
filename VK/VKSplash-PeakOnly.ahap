@@ -1,0 +1,69 @@
+{
+  "Version": 1.0,
+  "Metadata": {
+    "Project": "ВК — сплеш",
+    "Created": "2026-11-03",
+    "Description": "«Только пик»: один мягкий пик в момент, когда приложение загрузилось; пока грузится — тишина. Сила — множитель к HapticIntensity = 1, звонкость — прибавка к HapticSharpness = 0.5."
+  },
+  "Pattern": [
+    {
+      "Event": {
+        "Time": 0,
+        "EventType": "HapticContinuous",
+        "EventDuration": 0.95,
+        "EventParameters": [
+          { "ParameterID": "HapticIntensity", "ParameterValue": 1 },
+          { "ParameterID": "HapticSharpness", "ParameterValue": 0.5 }
+        ]
+      }
+    },
+    {
+      "ParameterCurve": {
+        "ParameterID": "HapticIntensityControl",
+        "Time": 0,
+        "ParameterCurveControlPoints": [
+          { "Time": 0, "ParameterValue": 0 },
+          { "Time": 0.058, "ParameterValue": 0.01 },
+          { "Time": 0.108, "ParameterValue": 0.04 },
+          { "Time": 0.167, "ParameterValue": 0.11 },
+          { "Time": 0.275, "ParameterValue": 0.28 },
+          { "Time": 0.325, "ParameterValue": 0.35 },
+          { "Time": 0.358, "ParameterValue": 0.38 },
+          { "Time": 0.383, "ParameterValue": 0.39 },
+          { "Time": 0.45, "ParameterValue": 0.4 },
+          { "Time": 0.5, "ParameterValue": 0.39 },
+          { "Time": 0.55, "ParameterValue": 0.35 },
+          { "Time": 0.633, "ParameterValue": 0.27 },
+          { "Time": 0.758, "ParameterValue": 0.1 },
+          { "Time": 0.817, "ParameterValue": 0.04 },
+          { "Time": 0.875, "ParameterValue": 0.01 },
+          { "Time": 0.95, "ParameterValue": 0 }
+        ]
+      }
+    },
+    {
+      "ParameterCurve": {
+        "ParameterID": "HapticSharpnessControl",
+        "Time": 0,
+        "ParameterCurveControlPoints": [
+          { "Time": 0, "ParameterValue": -0.2 },
+          { "Time": 0.008, "ParameterValue": -0.2 },
+          { "Time": 0.017, "ParameterValue": -0.15 },
+          { "Time": 0.075, "ParameterValue": -0.14 },
+          { "Time": 0.125, "ParameterValue": -0.13 },
+          { "Time": 0.283, "ParameterValue": -0.04 },
+          { "Time": 0.342, "ParameterValue": -0.01 },
+          { "Time": 0.392, "ParameterValue": 0 },
+          { "Time": 0.45, "ParameterValue": 0 },
+          { "Time": 0.517, "ParameterValue": 0 },
+          { "Time": 0.575, "ParameterValue": -0.02 },
+          { "Time": 0.808, "ParameterValue": -0.13 },
+          { "Time": 0.867, "ParameterValue": -0.14 },
+          { "Time": 0.933, "ParameterValue": -0.15 },
+          { "Time": 0.942, "ParameterValue": -0.2 },
+          { "Time": 0.95, "ParameterValue": -0.2 }
+        ]
+      }
+    }
+  ]
+}
