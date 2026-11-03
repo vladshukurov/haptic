@@ -1,0 +1,69 @@
+{
+  "Version": 1.0,
+  "Metadata": {
+    "Project": "VK Видео — сплеш",
+    "Created": "2026-11-03",
+    "Description": "«Взлёт · 02.11»: одна непрерывная вибрация на первый цикл анимации логотипа (1 с). Сила — множитель к HapticIntensity = 1, звонкость — прибавка к HapticSharpness = 0.5."
+  },
+  "Pattern": [
+    {
+      "Event": {
+        "Time": 0,
+        "EventType": "HapticContinuous",
+        "EventDuration": 1.01,
+        "EventParameters": [
+          { "ParameterID": "HapticIntensity", "ParameterValue": 1 },
+          { "ParameterID": "HapticSharpness", "ParameterValue": 0.5 }
+        ]
+      }
+    },
+    {
+      "ParameterCurve": {
+        "ParameterID": "HapticIntensityControl",
+        "Time": 0,
+        "ParameterCurveControlPoints": [
+          { "Time": 0, "ParameterValue": 0.02 },
+          { "Time": 0.042, "ParameterValue": 0.04 },
+          { "Time": 0.142, "ParameterValue": 0.16 },
+          { "Time": 0.233, "ParameterValue": 0.25 },
+          { "Time": 0.475, "ParameterValue": 0.4 },
+          { "Time": 0.517, "ParameterValue": 0.45 },
+          { "Time": 0.6, "ParameterValue": 0.59 },
+          { "Time": 0.625, "ParameterValue": 0.62 },
+          { "Time": 0.65, "ParameterValue": 0.62 },
+          { "Time": 0.683, "ParameterValue": 0.6 },
+          { "Time": 0.717, "ParameterValue": 0.55 },
+          { "Time": 0.75, "ParameterValue": 0.46 },
+          { "Time": 0.833, "ParameterValue": 0.22 },
+          { "Time": 0.892, "ParameterValue": 0.09 },
+          { "Time": 0.942, "ParameterValue": 0.03 },
+          { "Time": 1.01, "ParameterValue": 0 }
+        ]
+      }
+    },
+    {
+      "ParameterCurve": {
+        "ParameterID": "HapticSharpnessControl",
+        "Time": 0,
+        "ParameterCurveControlPoints": [
+          { "Time": 0, "ParameterValue": 0.23 },
+          { "Time": 0.042, "ParameterValue": 0.13 },
+          { "Time": 0.117, "ParameterValue": -0.08 },
+          { "Time": 0.142, "ParameterValue": -0.14 },
+          { "Time": 0.167, "ParameterValue": -0.19 },
+          { "Time": 0.2, "ParameterValue": -0.22 },
+          { "Time": 0.225, "ParameterValue": -0.22 },
+          { "Time": 0.258, "ParameterValue": -0.21 },
+          { "Time": 0.408, "ParameterValue": -0.1 },
+          { "Time": 0.442, "ParameterValue": -0.09 },
+          { "Time": 0.533, "ParameterValue": -0.1 },
+          { "Time": 0.625, "ParameterValue": -0.03 },
+          { "Time": 0.667, "ParameterValue": -0.02 },
+          { "Time": 0.742, "ParameterValue": -0.04 },
+          { "Time": 0.9, "ParameterValue": -0.14 },
+          { "Time": 1.01, "ParameterValue": -0.18 }
+        ]
+      }
+    }
+  ]
+}
